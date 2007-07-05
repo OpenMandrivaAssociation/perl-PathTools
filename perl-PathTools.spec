@@ -11,6 +11,7 @@ Group:		Development/Perl
 Summary:	Tools for working with paths and file specs across platforms
 URL:		http://search.cpan.org/dist/%{module}
 Source:		http://search.cpan.org/CPAN/authors/id/K/KW/KWILLIAMS/%{module}-%{version}.tar.bz2
+BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(ExtUtils::CBuilder)
 BuildRoot:	%{_tmppath}/%{name}-%{version}
