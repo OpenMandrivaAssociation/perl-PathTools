@@ -14,7 +14,6 @@ Source:		http://search.cpan.org/CPAN/authors/id/K/KW/KWILLIAMS/%{module}-%{versi
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(ExtUtils::CBuilder)
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Tools for working with paths and file specs across platforms.
