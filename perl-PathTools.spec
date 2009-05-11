@@ -1,6 +1,6 @@
 %define	module	PathTools
 %define	name	perl-%{module}
-%define version 3.29
+%define version 3.30
 %define release %mkrel 1
 
 Name:		%{name}
