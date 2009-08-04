@@ -3,12 +3,14 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
+Release:	%mkrel 2
+
+Summary:	Tools for working with paths and file specs across platforms
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Summary:	Tools for working with paths and file specs across platforms
-URL:		http://search.cpan.org/dist/%{upstream_name}
-Source:		http://search.cpan.org/CPAN/authors/id/S/SM/SMUELLER/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/S/SM/SMUELLER/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(ExtUtils::CBuilder)
@@ -41,4 +43,3 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Cwd.pm
 %{perl_vendorarch}/auto/Cwd
 %{_mandir}/man3/*
-
