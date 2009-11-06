@@ -1,9 +1,9 @@
 %define	upstream_name	 PathTools
-%define upstream_version 3.30
+%define upstream_version 3.31
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 
 Summary:	Tools for working with paths and file specs across platforms
 License:	GPL+ or Artistic
@@ -14,7 +14,8 @@ Source0:	http://search.cpan.org/CPAN/authors/id/S/SM/SMUELLER/%{upstream_name}-%
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(ExtUtils::CBuilder)
-BuildRoot:	%{_tmppath}/%{upstream_name}-%{upstream_version}
+
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Tools for working with paths and file specs across platforms.
@@ -23,15 +24,15 @@ Tools for working with paths and file specs across platforms.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Build.PL installdirs=vendor
-./Build CFLAGS="%{optflags}"
+%{__perl} Makefile.PL INSTALLDIRS=vendor
+make CFLAGS="%{optflags}"
 
 %check
-./Build test
+make test
 
 %install
 rm -rf %{buildroot}
-./Build install destdir=%{buildroot}
+%makeinstall_std
 
 %clean
 rm -rf %{buildroot}
