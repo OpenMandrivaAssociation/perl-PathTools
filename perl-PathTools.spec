@@ -1,9 +1,9 @@
 %define	upstream_name	 PathTools
-%define upstream_version 3.31
+%define upstream_version 3.33
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 3
+Release:	%mkrel 1
 
 Summary:	Tools for working with paths and file specs across platforms
 License:	GPL+ or Artistic
