@@ -1,2 +1,4 @@
+removed_sources:
+  PathTools-3.33.tar.gz: d99d09d8f985fcf25d4d0372d9302a5acf02f60f
 sources:
-  "PathTools-3.33.tar.gz": d99d09d8f985fcf25d4d0372d9302a5acf02f60f
+  PathTools-3.47.tar.gz: e29c649d51405a63ea5c3255637411bbf82c96c2
