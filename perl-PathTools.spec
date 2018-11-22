@@ -1,13 +1,13 @@
 %define	modname	PathTools
-%define modver	3.74
+%define modver	3.75
 
 Summary:	Tools for working with paths and file specs across platforms
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/release/PathTools
 Source0:	http://search.cpan.org/CPAN/authors/id/X/XS/XSAWYERX/%{modname}-%{modver}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
